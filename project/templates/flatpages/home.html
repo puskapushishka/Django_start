@@ -6,4 +6,7 @@
 
 {% block content %}
 {{ flatpage.content }}
+{% if user.is_authenticated %}
+<p><a href="http://127.0.0.1:8000/hills/">Two hills</a></p>
+{% endif %}
 {% endblock content %}
